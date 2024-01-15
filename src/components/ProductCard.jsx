@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
 
       <h3 className="truncate text-2xl font-semibold">{title}</h3>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 font-medium">
         <p>{Math.ceil(rating.rate)}</p>
         <div className="flex gap-1">
           {Array(Math.ceil(rating.rate))
