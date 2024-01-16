@@ -1,3 +1,7 @@
-tabs: ["src/App.jsx", "src/main.jsx", "src/App.css"]
-terminals: ["npm install && npm run dev"]
-run-button: npm run dev
+tabs: ["src/App.jsx"]
+terminals:
+  [
+    "bun install && bun run dev",
+    "echo 'Use this terminal to install additional packages'",
+  ]
+run-button: bun run dev
