@@ -1,4 +1,7 @@
 tabs: ["src/App.jsx", "src/main.jsx", "src/App.css"]
 terminals:
-  ["bun install && bun run dev", "echo 'Use this terminal to install packages"]
+  [
+    "bun install && bun run dev",
+    "echo 'Use this terminal to install additional packages'",
+  ]
 run-button: bun run dev
