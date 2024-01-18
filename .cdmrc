@@ -1,4 +1,4 @@
-tabs: ["src/App.jsx"]
+tabs: ["src/pages/ProductListing.jsx", "src/components/ProductCard.jsx"]
 terminals:
   [
     "bun install && bun run dev",
