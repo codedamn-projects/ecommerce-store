@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .product-card {
+    @apply grid gap-3 shadow-sm hover:shadow-lg hover:scale-105 transition duration-300 max-w-sm mx-auto overflow-x-hidden p-5 rounded-lg;
+  }
+
+  .product-card__category {
+    @apply w-fit italic font-medium text-gray-500;
+  }
+
+  .product-card__image {
+    @apply mx-auto w-72 h-60 object-contain;
+  }
+
+  .product-card__title {
+    @apply truncate text-2xl font-semibold;
+  }
+
+  .product-card__description {
+    @apply line-clamp-3 text-gray-600;
+  }
+
+  .product-card__price {
+    @apply text-3xl font-bold;
+  }
+
+  .product-detail {
+    @apply max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center justify-center justify-items-center;
+  }
+
+  .product-detail__title {
+    @apply text-4xl font-semibold;
+  }
+
+  .product-detail__description {
+    @apply text-gray-600;
+  }
+
+  .product-detail__price {
+    @apply text-4xl font-bold;
+  }
+
+  .product-detail__addToCart {
+    @apply flex gap-3 w-full justify-center bg-black text-white py-2 rounded-lg;
+  }
+}
