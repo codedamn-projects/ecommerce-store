@@ -26,4 +26,24 @@
   .product-card__price {
     @apply text-3xl font-bold;
   }
+
+  .product-detail {
+    @apply max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center justify-center justify-items-center;
+  }
+
+  .product-detail__title {
+    @apply text-4xl font-semibold;
+  }
+
+  .product-detail__description {
+    @apply text-4xl font-semibold;
+  }
+
+  .product-detail__price {
+    @apply text-4xl font-bold;
+  }
+
+  .product-detail__addToCart {
+    @apply flex gap-3 w-full justify-center bg-black text-white py-2 rounded-lg;
+  }
 }
