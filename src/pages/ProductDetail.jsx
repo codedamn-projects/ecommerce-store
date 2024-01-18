@@ -49,12 +49,10 @@ const ProductDetail = () => {
             <p className="product-detail__price">
               $ {product.price.toFixed(2)}
             </p>
-            <div>
-              <button className="product-detail__addToCart">
-                <ShoppingCart size={25} />
-                <p>Add to Cart</p>
-              </button>
-            </div>
+            <button className="product-detail__addToCart">
+              <ShoppingCart size={25} />
+              <p>Add to Cart</p>
+            </button>
           </section>
         </article>
       ) : (
