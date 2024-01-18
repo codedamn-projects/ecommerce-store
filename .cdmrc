@@ -1,4 +1,4 @@
-tabs: ["src/App.jsx"]
+tabs: ["src/App.jsx", "tailwind.config.js"]
 terminals:
   [
     "bun install && bun run dev",
