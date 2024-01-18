@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .product-card {
+    @apply grid gap-3 shadow-sm hover:shadow-lg hover:scale-105 transition duration-300 max-w-sm mx-auto overflow-x-hidden p-5 rounded-lg;
+  }
+
+  .product-card__category {
+    @apply w-fit italic font-medium text-gray-500;
+  }
+
+  .product-card__image {
+    @apply mx-auto w-72 h-60 object-contain;
+  }
+
+  .product-card__title {
+    @apply truncate text-2xl font-semibold;
+  }
+
+  .product-card__description {
+    @apply line-clamp-3 text-gray-600;
+  }
+
+  .product-card__price {
+    @apply text-3xl font-bold;
+  }
+}
