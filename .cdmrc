@@ -1,4 +1,4 @@
-tabs: ["src/App.jsx"]
+tabs: ["src/App.jsx", "src/index.css"]
 terminals:
   [
     "bun install && bun run dev",
