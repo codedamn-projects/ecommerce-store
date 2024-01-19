@@ -24,7 +24,9 @@ const Cart = () => {
           <div className="flex flex-col lg:flex-row gap-4 text-center justify-between pt-5">
             <h4 className="text-3xl">
               Subtotal ({cartItems.length} items):{" "}
-              <span className="font-medium">$ {totalPrice.toFixed(2)}</span>
+              <span id="totalPrice" className="font-medium">
+                $ {totalPrice.toFixed(2)}
+              </span>
             </h4>
             <button className="py-2.5 bg-green-500 transition duration-200 hover:bg-opacity-85 text-white px-5 font-medium rounded-lg">
               Proceed to Checkout
