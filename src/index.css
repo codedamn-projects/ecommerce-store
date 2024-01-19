@@ -26,4 +26,8 @@
   .product-card__price {
     @apply text-3xl font-bold;
   }
+
+  .total-item {
+    @apply bg-black text-white font-medium w-5 h-5 rounded-full grid place-content-center absolute -right-2 -top-1;
+  }
 }
