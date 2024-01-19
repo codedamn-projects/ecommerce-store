@@ -66,4 +66,8 @@
   .cart-product__removeFromCart {
     @apply flex items-center py-2.5 bg-red-500 transition duration-200 hover:bg-opacity-85  text-white justify-center rounded-lg;
   }
+
+  .total-item {
+    @apply bg-black text-white font-medium w-5 h-5 rounded-full grid place-content-center absolute -right-2 -top-1;
+  }
 }
