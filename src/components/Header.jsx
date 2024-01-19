@@ -9,14 +9,12 @@ const Header = () => {
           <h1 className="text-2xl font-bold">Store</h1>
         </Link>
 
-        <div className="relative">
+        <div className="relative" id="goToCart">
           <Link to="/">
             <ShoppingCart size={35} />
           </Link>
 
-          <p className="bg-black text-white font-medium w-5 h-5 rounded-full grid place-content-center absolute -right-2 -top-1">
-            0
-          </p>
+          <p className="total-item">0</p>
         </div>
       </div>
     </header>

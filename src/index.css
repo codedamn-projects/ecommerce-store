@@ -46,4 +46,8 @@
   .product-detail__addToCart {
     @apply flex gap-3 w-full justify-center bg-black text-white py-2 rounded-lg;
   }
+
+  .total-item {
+    @apply bg-black text-white font-medium w-5 h-5 rounded-full grid place-content-center absolute -right-2 -top-1;
+  }
 }
