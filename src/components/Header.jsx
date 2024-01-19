@@ -9,13 +9,11 @@ const Header = () => {
           <h1 className="text-2xl font-bold">Store</h1>
         </Link>
 
-        <div className="relative" id="goToCart">
-          <Link to="/">
-            <ShoppingCart size={35} />
-          </Link>
+        <Link to="/cart" className="relative" id="goToCart">
+          <ShoppingCart size={35} />
 
           <p className="total-item">0</p>
-        </div>
+        </Link>
       </div>
     </header>
   )
