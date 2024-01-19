@@ -11,11 +11,11 @@ const CartProduct = ({ product }) => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-2.5 md:px-7 grid grid-cols-1 lg:grid-cols-5 gap-5 items-center">
+    <div className="cart-product">
       <img src={image} alt="product image" width={200} height={200} />
 
       <div className="lg:col-span-3 space-y-2">
-        <h3 className="text-3xl font-semibold truncate">{title}</h3>
+        <h3 className="cart-product__title">{title}</h3>
 
         <div className="flex gap-3 font-medium">
           <p>{Math.ceil(product.rating.rate)}</p>
@@ -34,15 +34,12 @@ const CartProduct = ({ product }) => {
           <p>| {product.rating.count} ratings</p>
         </div>
 
-        <p className="line-clamp-3">{description}</p>
+        <p className="cart-product__description">{description}</p>
 
-        <p className="text-3xl font-bold">$ {price.toFixed(2)}</p>
+        <p className="cart-product__price">$ {price.toFixed(2)}</p>
       </div>
 
-      <button
-        className="flex items-center py-2.5 bg-red-500 transition duration-200 hover:bg-opacity-85  text-white justify-center rounded-lg"
-        onClick={removeFromCart}
-      >
+      <button className="cart-product__removeFromCart" onClick={removeFromCart}>
         <ShoppingCart className="mr-2" />
         <p>Remove from Cart</p>
       </button>
