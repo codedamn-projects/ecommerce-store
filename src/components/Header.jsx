@@ -12,12 +12,10 @@ const Header = () => {
           <h1 className="text-2xl font-bold">Store</h1>
         </Link>
 
-        <Link to="/cart" className="relative">
+        <Link to="/cart" className="relative" id="goToCart">
           <ShoppingCart size={35} />
 
-          <p className="bg-black text-white font-medium w-5 h-5 rounded-full grid place-content-center absolute -right-2 -top-1">
-            {cartItems.length}
-          </p>
+          <p className="total-item">{cartItems.length}</p>
         </Link>
       </div>
     </header>
