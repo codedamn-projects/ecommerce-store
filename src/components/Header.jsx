@@ -10,7 +10,7 @@ const Header = () => {
         </Link>
 
         <div className="relative" id="goToCart">
-          <Link to="/">
+          <Link to="/cart">
             <ShoppingCart size={35} />
           </Link>
 
